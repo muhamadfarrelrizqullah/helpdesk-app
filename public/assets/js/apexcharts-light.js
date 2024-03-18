@@ -499,7 +499,7 @@ $(function() {
   // Apex Donut chart start
 
   // Apex Donut chart start
-  if ($('#kategoriLaporan').length) {
+  if ($('#kategoriMasalah').length) {
     var options = {
       chart: {
         height: 300,
@@ -538,7 +538,7 @@ $(function() {
       labels: ['Teknisi', 'Administratif', 'Akademis', 'Lainnya']
     };
 
-    var chart = new ApexCharts(document.querySelector("#kategoriLaporan"), options);
+    var chart = new ApexCharts(document.querySelector("#kategoriMasalah"), options);
     chart.render();
   }
   // Apex Donut chart start

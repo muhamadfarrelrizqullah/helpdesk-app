@@ -1,5 +1,7 @@
 @extends('admin.template.main')
 
+@section('title', 'Data Aduan Dosen')
+
 @section('content')
     <div class="page-content mt-n4">
         <div class="row">

@@ -24,3 +24,5 @@
 <!-- End layout styles -->
 
 <link rel="icon" type="image/png" href="public/favicon.ico">
+
+@stack('style')

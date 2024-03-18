@@ -1,23 +1,25 @@
 @extends('superadmin.template.main')
 
-@section('content')
-    <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
-        <div>
-            <h4 class="mb-3 mb-md-0">Selamat Datang di Halaman Super Admin</h4>
-        </div>
-        <div class="d-flex align-items-center flex-wrap text-nowrap">
-            <div class="input-group date datepicker wd-200 me-2 mb-2 mb-md-0" id="dashboardDate">
-              <span class="input-group-text input-group-addon bg-transparent border-warning"><i data-feather="calendar" class=" text-warning"></i></span>
-              <input type="text" class="form-control border-warning bg-transparent">
-            </div>
-            <button type="button" class="btn btn-warning btn-icon-text mb-2 mb-md-0 text-light">
-              <i class="btn-icon-prepend" data-feather="download-cloud"></i>
-              Download Report
-            </button>
-          </div>
-    </div>
+@section('title', 'Dashboard Super Admin')
 
+@section('content')
     <div class="page-content mt-n4">
+        <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
+            <div>
+                <h4 class="mb-3 mb-md-0">Selamat Datang di Halaman Super Admin</h4>
+            </div>
+            <div class="d-flex align-items-center flex-wrap text-nowrap">
+                <div class="input-group date datepicker wd-200 me-2 mb-2 mb-md-0" id="dashboardDate">
+                  <span class="input-group-text input-group-addon bg-transparent border-success"><i data-feather="calendar" class=" text-success"></i></span>
+                  <input type="text" class="form-control border-success bg-transparent">
+                </div>
+                <button type="button" class="btn btn-success btn-icon-text mb-2 mb-md-0 text-light">
+                  <i class="btn-icon-prepend" data-feather="download-cloud"></i>
+                  Download Report
+                </button>
+              </div>
+        </div>
+        
         <div class="row">
             <div class="col-12 col-md-4 col-xl-4">
                 <div class="card">
@@ -95,10 +97,10 @@
                             </div>
                             <div class="col-md-5 d-flex justify-content-md-end">
                                 <div class="btn-group mb-3 mb-md-0" role="group" aria-label="Basic example">
-                                    <button type="button" class="btn btn-outline-warning">Hari</button>
-                                    <button type="button" class="btn btn-outline-warning d-none d-md-block">Minggu</button>
-                                    <button type="button" class="btn btn-warning text-light">Bulan</button>
-                                    <button type="button" class="btn btn-outline-warning">Tahun</button>
+                                    <button type="button" class="btn btn-outline-success">Hari</button>
+                                    <button type="button" class="btn btn-outline-success d-none d-md-block">Minggu</button>
+                                    <button type="button" class="btn btn-success text-light">Bulan</button>
+                                    <button type="button" class="btn btn-outline-success">Tahun</button>
                                 </div>
                             </div>
                         </div>
@@ -120,8 +122,8 @@
             <div class="col-xl-4 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h6 class="card-title">Kategori Laporan</h6>
-                        <div id="kategoriLaporan"></div>
+                        <h6 class="card-title">Kategori Masalah</h6>
+                        <div id="kategoriMasalah"></div>
                     </div>
                 </div>
             </div>

@@ -25687,3 +25687,7 @@ div.tox .tox-dialog__body {
   margin: 0 0 0 0.7em;
 }
 /*# sourceMappingURL=../maps/demo1/style.css.map */
+
+table td, table th {
+  text-align: center;
+}

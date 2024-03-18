@@ -20,19 +20,19 @@
             </li>
             <li class="nav-item nav-category">Tiket</li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('adbelumproses') }}" class="nav-link">
                     <i class="link-icon" data-feather="x-circle"></i>
                     <span class="link-title">Belum Proses</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('adproses') }}" class="nav-link">
                     <i class="link-icon" data-feather="activity"></i>
                     <span class="link-title">Proses</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('adselesai') }}" class="nav-link">
                     <i class="link-icon" data-feather="check"></i>
                     <span class="link-title">Selesai</span>
                 </a>

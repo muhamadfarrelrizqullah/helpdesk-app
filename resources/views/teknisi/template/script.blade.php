@@ -26,3 +26,5 @@
 <script src="../assets/js/peity.js"></script>
 <script src="../assets/js/apexcharts-light.js"></script>
 <!-- End custom js for this page -->
+
+@stack('script')
