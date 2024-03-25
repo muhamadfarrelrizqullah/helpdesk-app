@@ -20,26 +20,26 @@
             </li>
             <li class="nav-item nav-category">Tiket</li>
             <li class="nav-item">
-                <a href="{{ route('adbelumproses') }}" class="nav-link">
-                    <i class="link-icon" data-feather="x-circle"></i>
+                <a href="{{ route('tksaduanbelumproses') }}" class="nav-link">
+                    <i class="link-icon" data-feather="x"></i>
                     <span class="link-title">Belum Proses</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{ route('adproses') }}" class="nav-link">
+                <a href="{{ route('tksaduanproses') }}" class="nav-link">
                     <i class="link-icon" data-feather="activity"></i>
                     <span class="link-title">Proses</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{ route('adselesai') }}" class="nav-link">
+                <a href="{{ route('tksaduanselesai') }}" class="nav-link">
                     <i class="link-icon" data-feather="check"></i>
                     <span class="link-title">Selesai</span>
                 </a>
             </li>
             <li class="nav-item nav-category">Akun</li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('tksprofil') }}" class="nav-link">
                     <i class="link-icon" data-feather="user"></i>
                     <span class="link-title">Profil</span>
                 </a>

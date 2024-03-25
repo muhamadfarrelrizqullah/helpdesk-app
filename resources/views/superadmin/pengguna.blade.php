@@ -1,6 +1,6 @@
 @extends('superadmin.template.main')
 
-@section('title', 'Data Tiket - Helpdesk ITSK')
+@section('title', 'Data Pengguna - Helpdesk ITSK')
 
 @section('content')
     <div class="page-content mt-n4">
@@ -8,61 +8,59 @@
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-4" id="top-content">
-                            <h6 class="card-title m-0">Data Tiket Pengaduan</h6>
-                            <button type="button" class="btn btn-danger btn-sm btn-icon-text" id="bt-del"><i class="link-icon" data-feather="x-square"></i> Hapus Data</button>
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h6 class="card-title m-0">Data Pengguna</h6>
+                            <div>
+                                <button type="button" id="bt-tambah" class="btn btn-success btn-sm btn-icon-text"><i class="link-icon" data-feather="plus-square"></i> Tambah Data</button>
+                                <button type="button" class="btn btn-danger btn-sm btn-icon-text"><i class="link-icon" data-feather="x-square"></i> Hapus Data</button>
+                            </div>
                         </div>
                         <div class="table-responsive">
                             <table id="dataTableExample" class="table hover stripe">
                                 <thead>
                                     <tr>
                                         <th><input type="checkbox" class="form-check-input check-all"></th>
-                                        <th>Permasalahan</th>
-                                        <th>Tanggal Dibuat</th>
-                                        <th>Kategori Masalah</th>
+                                        <th>Nama Pengguna</th>
+                                        <th>Email</th>
+                                        <th>Role</th>
                                         <th>Status</th>
-                                        <th>Urgensi</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td><input type="checkbox" class="form-check-input check"></td>
-                                        <td>Jaringan wifi lemah</td>
-                                        <td>2011/04/25</td>
-                                        <td>Teknis</td>
-                                        <td><span class="badge bg-warning">Proses</span></td>
-                                        <td><span class="badge bg-success">Rendah</span></td>
+                                        <td>John Bayer</td>
+                                        <td>jbayer@mail.com</td>
+                                        <td><span class="badge bg-primary">Super Admin</span></td>
+                                        <td><i class="link-icon" data-feather="check-circle"></i></td>
                                         <td><button type="button" class="btn btn-primary btn-sm btn-icon-text"><i class="link-icon" data-feather="eye"></i> </button>
                                             <button type="button" class="btn btn-secondary btn-sm btn-icon-text"><i class="link-icon" data-feather="edit"></i> </button></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" class="form-check-input check"></td>
-                                        <td>Tidak bisa mengajukan KRS</td>
-                                        <td>2011/04/27</td>
-                                        <td>Akademis</td>
-                                        <td><span class="badge bg-success">Selesai</span></td>
-                                        <td><span class="badge bg-warning">Sedang</span></td>
+                                        <td>Heru Kahn</td>
+                                        <td>herukahn@mail.com</td>
+                                        <td><span class="badge bg-info">Teknisi</span></td>
+                                        <td><i class="link-icon" data-feather="check-circle"></i></td>
                                         <td><button type="button" class="btn btn-primary btn-sm btn-icon-text"><i class="link-icon" data-feather="eye"></i> </button>
                                             <button type="button" class="btn btn-secondary btn-sm btn-icon-text"><i class="link-icon" data-feather="edit"></i> </button></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" class="form-check-input check"></td>
-                                        <td>Jaringan wifi lag</td>
-                                        <td>2011/04/28</td>
-                                        <td>Teknis</td>
-                                        <td><span class="badge bg-warning">Proses</span></td>
-                                        <td><span class="badge bg-success">Rendah</span></td>
+                                        <td>Jane Kimberly</td>
+                                        <td>janeeer@mail.com</td>
+                                        <td><span class="badge bg-secondary">Admin</span></td>
+                                        <td><i class="link-icon" data-feather="check-circle"></i></td>
                                         <td><button type="button" class="btn btn-primary btn-sm btn-icon-text"><i class="link-icon" data-feather="eye"></i> </button>
                                             <button type="button" class="btn btn-secondary btn-sm btn-icon-text"><i class="link-icon" data-feather="edit"></i> </button></td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" class="form-check-input check"></td>
-                                        <td>AC mati</td>
-                                        <td>2011/04/29</td>
-                                        <td>Teknis</td>
-                                        <td><span class="badge bg-warning">Proses</span></td>
-                                        <td><span class="badge bg-danger">Tinggi</span></td>
+                                        <td>Fredo Dredd</td>
+                                        <td>fredodredd@mail.com</td>
+                                        <td><span class="badge bg-info">Teknisi</span></td>
+                                        <td><i class="link-icon" data-feather="check-circle"></i></td>
                                         <td><button type="button" class="btn btn-primary btn-sm btn-icon-text"><i class="link-icon" data-feather="eye"></i> </button>
                                             <button type="button" class="btn btn-secondary btn-sm btn-icon-text"><i class="link-icon" data-feather="edit"></i> </button></td>
                                     </tr>
@@ -92,22 +90,14 @@
 @push('style')
 <style>
     .btn-primary{
-        margin-right: 10px;
+        margin-right: 10px
     }
-
     .link-icon{
         max-width: 20px;
     }
-
-    @media only screen and (max-width: 476px) {
-        #top-content {
-            flex-direction: column;
-        }
-
-        #bt-del{
-            margin-top: 10px;
-            width: 100%;
-        }
+    #bt-tambah{
+        margin-right: 10px
     }
 </style>
 @endpush
+

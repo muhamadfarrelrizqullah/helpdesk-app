@@ -474,7 +474,7 @@ $(function() {
       stroke: {
         colors: ['rgba(0,0,0,0)']
       },
-      colors: [colors.primary,colors.danger,colors.warning,colors.success],
+      colors: [colors.danger,colors.warning,colors.success],
       legend: {
         show: true,
         position: "top",
@@ -489,8 +489,8 @@ $(function() {
       dataLabels: {
         enabled: false
       },
-      series: [14, 6, 7, 17],
-      labels: ['Diterima', 'Belum Diproses', 'Diproses', 'Selesai']
+      series: [6, 7, 17],
+      labels: ['Belum Diproses', 'Diproses', 'Selesai']
     };
 
     var chart = new ApexCharts(document.querySelector("#statusTiket"), options);

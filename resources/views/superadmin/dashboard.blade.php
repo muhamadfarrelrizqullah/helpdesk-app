@@ -1,28 +1,29 @@
 @extends('superadmin.template.main')
 
-@section('title', 'Dashboard Super Admin')
+@section('title', 'Dashboard Super Admin - Helpdesk ITSK')
 
 @section('content')
     <div class="page-content mt-n4">
-        <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
+        <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin" id="top-content">
             <div>
-                <h4 class="mb-3 mb-md-0">Selamat Datang di Halaman Super Admin</h4>
+                <h4 class="mb-3 mb-md-0" id="welcome">Selamat Datang di Halaman Super Admin! <img src="../assets/images/wave.gif" id="hand"></h4>
             </div>
-            <div class="d-flex align-items-center flex-wrap text-nowrap">
+            <div class="d-flex align-items-center flex-wrap text-nowrap" id="bt-group">
                 <div class="input-group date datepicker wd-200 me-2 mb-2 mb-md-0" id="dashboardDate">
-                  <span class="input-group-text input-group-addon bg-transparent border-success"><i data-feather="calendar" class=" text-success"></i></span>
-                  <input type="text" class="form-control border-success bg-transparent">
+                    <span class="input-group-text input-group-addon bg-transparent border-success"><i
+                            data-feather="calendar" class=" text-success"></i></span>
+                    <input type="text" class="form-control border-success bg-transparent" id="bt-date">
                 </div>
-                <button type="button" class="btn btn-success btn-icon-text mb-2 mb-md-0 text-light">
-                  <i class="btn-icon-prepend" data-feather="download-cloud"></i>
-                  Download Report
+                <button type="button" class="btn btn-success btn-icon-text mb-2 mb-md-0 text-light" id="bt-download">
+                    <i class="btn-icon-prepend" data-feather="download-cloud"></i>
+                    Download Report
                 </button>
-              </div>
+            </div>
         </div>
-        
+
         <div class="row">
             <div class="col-12 col-md-4 col-xl-4">
-                <div class="card">
+                <div class="card" id="card1">
                     <div class="card-body d-flex justify-content-between align-items-center">
                         <div>
                             <h1 class="pb-2">20</h1>
@@ -34,7 +35,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-4 col-xl-4">
-                <div class="card">
+                <div class="card" id="card2">
                     <div class="card-body d-flex justify-content-between align-items-center">
                         <div>
                             <h1 class="pb-2">7</h1>
@@ -46,7 +47,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-4 col-xl-4">
-                <div class="card">
+                <div class="card" id="card3">
                     <div class="card-body d-flex justify-content-between align-items-center">
                         <div>
                             <h1 class="pb-2">120</h1>
@@ -98,7 +99,8 @@
                             <div class="col-md-5 d-flex justify-content-md-end">
                                 <div class="btn-group mb-3 mb-md-0" role="group" aria-label="Basic example">
                                     <button type="button" class="btn btn-outline-success">Hari</button>
-                                    <button type="button" class="btn btn-outline-success d-none d-md-block">Minggu</button>
+                                    <button type="button"
+                                        class="btn btn-outline-success d-none d-md-block">Minggu</button>
                                     <button type="button" class="btn btn-success text-light">Bulan</button>
                                     <button type="button" class="btn btn-outline-success">Tahun</button>
                                 </div>
@@ -130,7 +132,7 @@
             <div class="col-xl-4 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h6 class="card-title">Donut chart</h6>
+                        <h6 class="card-title">Urgensi Laporan</h6>
                         <div id="urgensiLaporan"></div>
                     </div>
                 </div>
@@ -144,9 +146,10 @@
                     <div class="card-body">
                         <h6 class="card-title">Data Laporan Pengaduan</h6>
                         <div class="table-responsive">
-                            <table id="dataTableExample" class="table">
+                            <table id="dataTableExample" class="table hover stripe">
                                 <thead>
                                     <tr>
+                                        <th>No</th>
                                         <th>Nama</th>
                                         <th>Posisi</th>
                                         <th>Fakultas</th>
@@ -160,10 +163,11 @@
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>1</td>
                                         <td>Tiger Nixon</td>
+                                        <td>Dosen</td>
                                         <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>6</td>
+                                        <td>---</td>
                                         <td>2011/04/25</td>
                                         <td>2011/04/30</td>
                                         <td>123456789</td>
@@ -171,9 +175,10 @@
                                         <td>---</td>
                                     </tr>
                                     <tr>
+                                        <td>2</td>
                                         <td>Garrett Winters</td>
+                                        <td>Mahasiswa</td>
                                         <td>Accountant</td>
-                                        <td>Tokyo</td>
                                         <td>6</td>
                                         <td>2011/07/25</td>
                                         <td>2011/07/27</td>
@@ -182,9 +187,10 @@
                                         <td>---</td>
                                     </tr>
                                     <tr>
+                                        <td>3</td>
                                         <td>Ashton Cox</td>
+                                        <td>Mahasiswa</td>
                                         <td>Junior Technical Author</td>
-                                        <td>San Francisco</td>
                                         <td>6</td>
                                         <td>2009/01/12</td>
                                         <td>2009/01/17</td>
@@ -193,9 +199,10 @@
                                         <td>---</td>
                                     </tr>
                                     <tr>
+                                        <td>4</td>
                                         <td>John Nixie</td>
+                                        <td>Mahasiswa</td>
                                         <td>System Architect</td>
-                                        <td>Edinburgh</td>
                                         <td>6</td>
                                         <td>2011/04/25</td>
                                         <td>2011/04/30</td>
@@ -204,20 +211,22 @@
                                         <td>---</td>
                                     </tr>
                                     <tr>
+                                        <td>5</td>
                                         <td>Michelle Winters</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
+                                        <td>Karyawan</td>
+                                        <td>---</td>
                                         <td>6</td>
                                         <td>2011/07/25</td>
                                         <td>2011/07/27</td>
                                         <td>987654321</td>
-                                        <td>---</td>
-                                        <td>---</td>
+                                        <td>Administrasi</td>
+                                        <td>Sekretaris</td>
                                     </tr>
                                     <tr>
+                                        <td>6</td>
                                         <td>Cox Victoria</td>
+                                        <td>Mahasiswa</td>
                                         <td>Junior Technical Author</td>
-                                        <td>San Francisco</td>
                                         <td>6</td>
                                         <td>2009/01/12</td>
                                         <td>2009/01/17</td>
@@ -226,9 +235,10 @@
                                         <td>---</td>
                                     </tr>
                                     <tr>
+                                        <td>7</td>
                                         <td>Kimberly Nixon</td>
+                                        <td>Mahasiswa</td>
                                         <td>System Architect</td>
-                                        <td>Edinburgh</td>
                                         <td>6</td>
                                         <td>2011/04/25</td>
                                         <td>2011/04/30</td>
@@ -237,9 +247,10 @@
                                         <td>---</td>
                                     </tr>
                                     <tr>
+                                        <td>8</td>
                                         <td>Gabriel Winters</td>
+                                        <td>Mahasiswa</td>
                                         <td>Accountant</td>
-                                        <td>Tokyo</td>
                                         <td>6</td>
                                         <td>2011/07/25</td>
                                         <td>2011/07/27</td>
@@ -248,9 +259,10 @@
                                         <td>---</td>
                                     </tr>
                                     <tr>
+                                        <td>9</td>
                                         <td>Marley Cox</td>
+                                        <td>Mahasiswa</td>
                                         <td>Junior Technical Author</td>
-                                        <td>San Francisco</td>
                                         <td>6</td>
                                         <td>2009/01/12</td>
                                         <td>2009/01/17</td>
@@ -259,9 +271,10 @@
                                         <td>---</td>
                                     </tr>
                                     <tr>
+                                        <td>10</td>
                                         <td>Bella Nixon</td>
+                                        <td>Mahasiswa</td>
                                         <td>System Arciitect</td>
-                                        <td>Edinburgh</td>
                                         <td>6</td>
                                         <td>2011/04/25</td>
                                         <td>2011/04/30</td>
@@ -270,9 +283,10 @@
                                         <td>---</td>
                                     </tr>
                                     <tr>
+                                        <td>11</td>
                                         <td>Jonathan Winters</td>
+                                        <td>Mahasiswa</td>
                                         <td>Accountant</td>
-                                        <td>Tokyo</td>
                                         <td>6</td>
                                         <td>2011/07/25</td>
                                         <td>2011/07/27</td>
@@ -281,9 +295,10 @@
                                         <td>---</td>
                                     </tr>
                                     <tr>
+                                        <td>12</td>
                                         <td>Ashton Dev</td>
+                                        <td>Mahasiswa</td>
                                         <td>Junior Technical Author</td>
-                                        <td>San Francisco</td>
                                         <td>6</td>
                                         <td>2009/01/12</td>
                                         <td>2009/01/17</td>
@@ -300,3 +315,63 @@
         </div>
     </div>
 @endsection
+
+@push('style')
+    <style>
+        #hand {
+            width: 35px;
+            margin-top: -10px;
+        }
+
+        @media only screen and (max-width: 1195px) {
+            #bt-group {
+                margin-top: 10px;
+
+            }
+
+            #top-content {
+                flex-direction: column;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            #bt-group {
+                margin-top: 0;
+            }
+
+            #card2 {
+                margin-top: 10px;
+            }
+
+            #card3 {
+                margin-top: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 476px) {
+            #bt-group {
+                margin-top: 0;
+                flex-direction: column;
+            }
+
+            #welcome {
+                font-size: 17px;
+            }
+
+            #bt-download{
+                display: block;
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 423px) {
+            #welcome {
+                font-size: 15px;
+            }
+
+            #hand {
+                width: 25px;
+            }
+        }
+    </style>
+@endpush

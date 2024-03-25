@@ -32,26 +32,26 @@
             </li>
             <li class="nav-item">
                 <a href="{{ route('sprkategorimasalah') }}" class="nav-link">
-                    <i class="link-icon" data-feather="link"></i>
+                    <i class="link-icon" data-feather="tag"></i>
                     <span class="link-title">Kategori Masalah</span>
                 </a>
             </li>
             <li class="nav-item nav-category">Master Data</li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('sprunit') }}" class="nav-link">
                     <i class="link-icon" data-feather="link"></i>
                     <span class="link-title">Unit</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('sprpengguna') }}" class="nav-link">
                     <i class="link-icon" data-feather="users"></i>
                     <span class="link-title">Pengguna</span>
                 </a>
             </li>
             <li class="nav-item nav-category">Akun</li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('sprprofil') }}" class="nav-link">
                     <i class="link-icon" data-feather="user"></i>
                     <span class="link-title">Profil</span>
                 </a>

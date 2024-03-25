@@ -1,6 +1,6 @@
 @extends('admin.template.main')
 
-@section('title', 'Data Aduan Mahasiswa')
+@section('title', 'Data Aduan Mahasiswa - Helpdesk ITSK')
 
 @section('content')
     <div class="page-content mt-n4">
@@ -10,7 +10,7 @@
                     <div class="card-body">
                         <h6 class="card-title">Data Laporan Pengaduan Mahasiswa</h6>
                         <div class="table-responsive">
-                            <table id="dataTableExample" class="table">
+                            <table id="dataTableExample" class="table hover stripe">
                                 <thead>
                                     <tr>
                                         <th>No</th>

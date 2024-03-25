@@ -1,6 +1,6 @@
 @extends('teknisi.template.main')
 
-@section('title', 'Data Aduan Belum Proses')
+@section('title', 'Data Aduan Belum Proses - Helpdesk ITSK')
 
 @section('content')
 <div class="page-content mt-n4">
@@ -26,7 +26,7 @@
                 <div class="card-body">
                     <h6 class="card-title">Data Aduan Belum Diproses</h6>
                     <div class="table-responsive">
-                        <table id="dataTableExample" class="table">
+                        <table id="dataTableExample" class="table hover stripe">
                             <thead>
                                 <tr>
                                     <th>No</th>

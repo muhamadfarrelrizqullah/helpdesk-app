@@ -1,6 +1,6 @@
 @extends('superadmin.template.main')
 
-@section('title', 'Data Status Tiket')
+@section('title', 'Data Status Tiket - Helpdesk ITSK')
 
 @section('content')
     <div class="page-content mt-n4">
@@ -8,9 +8,9 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-body">
-                        <h6 class="card-title">Data Status Tiket</h6>
+                        <h6 class="card-title">Data Status Tiket Pengaduan</h6>
                         <div class="table-responsive">
-                            <table id="dataTableExample" class="table">
+                            <table id="dataTableExample" class="table hover stripe">
                                 <thead>
                                     <tr>
                                         <th>No</th>
@@ -21,21 +21,16 @@
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Diterima</td>
-                                        <td>14</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
                                         <td>Belum Diproses</td>
                                         <td>6</td>
                                     </tr>
                                     <tr>
-                                        <td>3</td>
+                                        <td>2</td>
                                         <td>Diproses</td>
                                         <td>7</td>
                                     </tr>
                                     <tr>
-                                        <td>4</td>
+                                        <td>3</td>
                                         <td>Selesai</td>
                                         <td>17</td>
                                     </tr>

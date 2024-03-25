@@ -20,26 +20,26 @@
             </li>
             <li class="nav-item nav-category">Tiket</li>
             <li class="nav-item">
-                <a href="{{ route('tmahasiswa') }}" class="nav-link">
+                <a href="{{ route('admtiketmahasiswa') }}" class="nav-link">
                     <i class="link-icon" data-feather="users"></i>
                     <span class="link-title">Mahasiswa</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{ route('tdosen') }}" class="nav-link">
-                    <i class="link-icon" data-feather="user-plus"></i>
+                <a href="{{ route('admtiketdosen') }}" class="nav-link">
+                    <i class="link-icon" data-feather="users"></i>
                     <span class="link-title">Dosen</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{ route('tkaryawan') }}" class="nav-link">
-                    <i class="link-icon" data-feather="user-check"></i>
+                <a href="{{ route('admtiketkaryawan') }}" class="nav-link">
+                    <i class="link-icon" data-feather="users"></i>
                     <span class="link-title">Karyawan</span>
                 </a>
             </li>
             <li class="nav-item nav-category">Akun</li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('admprofil') }}" class="nav-link">
                     <i class="link-icon" data-feather="user"></i>
                     <span class="link-title">Profil</span>
                 </a>

@@ -11,6 +11,7 @@
 <!-- Plugin css for this page -->
 <link rel="stylesheet" href="../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
 <link rel="stylesheet" href="../assets/vendors/datatables.net-bs5/dataTables.bootstrap5.css">
+<link rel="stylesheet" href="../assets/vendors/datatables.net/jquery.dataTables.css">
 <!-- End plugin css for this page -->
 
 <!-- inject:css -->
